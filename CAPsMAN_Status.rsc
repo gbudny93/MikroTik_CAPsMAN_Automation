@@ -10,6 +10,7 @@
 :global channelCount [/caps-man channel print count-only];
 :global aclCount [/caps-man access-list print count-only];
 :global radiusCount [/radius print count-only];
+:global dnsServers [/ip dns get value-name=servers];
 
 #Global Variables
 :global pingInterval 1;
@@ -17,11 +18,6 @@
 
 #Local variables
 :local $backupCAPsMANIp #X.X.X.X;
-
-
-
-#system resource cpu print
-#system resource print
 
 
 #Count Radius Servers and check
@@ -33,11 +29,11 @@
 
 }
  
-
-
 #Check backup CAPs and check NPSs 
 :if ([/ping 1.1.1.1 interval=1 count=8] > 0) do={:put "backup ok"} else={:put "ups lipa"}
 
 
+#system resource cpu print
+#system resource print
 
 
