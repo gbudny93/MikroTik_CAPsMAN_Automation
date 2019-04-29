@@ -1,14 +1,13 @@
-
-
-#Glabl variables with values assigned
+#Global variables with values assigned
 :global packageCurrent [/system package update get current-version];
 :global packageLatest [/system package update get latest-version];
-
-
 
 #Local variables with variables to be defined
 :local packagePath #;
 :local isDownload false;
+:local isReboot true;
+
+
 
 
 :if($isDownload){
