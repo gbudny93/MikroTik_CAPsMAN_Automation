@@ -1,5 +1,7 @@
-#Script removes all defined CAPsMAN interfaces. Downloads current list from primary CAPsMAN and import it. 
-#Script must be run on any of backup CAPsMANs. 
+# RouterOS Script
+# Copyright (c) Grzegorz Budny  
+# Removes all defined CAPsMAN interfaces. Downloads current list from primary CAPsMAN and import it. 
+# Script must be run on any of backup CAPsMANs. 
 
 :local primaryCAPsMAN #primary CAPsMAN IP
 :local filePath caps_int.rsc

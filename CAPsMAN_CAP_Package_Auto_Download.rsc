@@ -1,4 +1,7 @@
-#Global variables with values assigned
+# RouterOS Script
+# Copyright (c) Grzegorz Budny 
+# Pending creation
+
 :global packageCurrent [/system package update get current-version];
 :global packageLatest [/system package update get latest-version];
 

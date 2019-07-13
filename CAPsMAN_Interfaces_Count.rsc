@@ -1,5 +1,7 @@
-#Script makes a full copy to file all defined CAPsMAN interfaces.
-#Script must be run on primary CAPsMAN in your environment.
+# RouterOS Script
+# Copyright (c) Grzegorz Budny 
+# Makes a full copy to file all defined CAPsMAN interfaces.
+# Script must be run on primary CAPsMAN in your environment.
 
 :global capIntCount;
 
