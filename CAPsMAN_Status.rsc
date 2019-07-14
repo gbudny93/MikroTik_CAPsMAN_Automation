@@ -1,3 +1,7 @@
+# RouterOS Function 
+# Copyright (c) Grzegorz Budny 
+# Generates e-mail CAPsMAN status 
+
 #Global variables defined with values assigned
 
 :global intCount [/caps-man remote-cap print count-only];
