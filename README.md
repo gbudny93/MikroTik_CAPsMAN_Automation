@@ -22,7 +22,7 @@
 
 ## Prerequisites
 
-    -  :white_check_mark: RouterOS v6.40 or higher
+-  :white_check_mark: RouterOS v6.40 or higher
 
 ## Usage
 
