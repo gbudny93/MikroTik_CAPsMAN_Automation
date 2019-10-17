@@ -13,19 +13,19 @@
 
     :if ($packageCurrent != $packageLatest) do={
 
-        :log info ("...:::New package available - ".$packageLatest." Downloading:::...");
+        :log info ("...:::New cAP package available - ".$packageLatest." Downloading:::...");
         
         /system package update download;
         
         :log info ("...:::".$packageName." ".$packageLatest." downloaded. Moving to specified container:::...");
         :delay 2;
         
-        /tool fetch address=127.0.0.1 src-path=($packageName."-".$packageLatest.".npk") user=$userName password=$password dst-path=($packagePath."/".($packageName."-".$packageLatest.".npk")) mode=ftp port=21;
+        /tool fetch address=$capsmanIP src-path=($packageName."-".$packageLatest.".npk") user=$userName password=$password dst-path=($packagePath."/".($packageName."-".$packageLatest.".npk")) mode=ftp port=21;
         
-        :log info ("...:::Package moved to ".$packagePath."\n Ready to deploy:::..."); 
+        :log info ("...:::Package moved to ".$capsmanIP."\n Ready to deploy:::..."); 
 
         /tool e-mail send server=$smtpServer port=$smtpPort from=($systemName.$domain) \ 
-        to=$recipient subject=("Update available on ".$systemName) \ 
+        to=$recipient subject=("cAP update available on ".$systemName) \ 
         body=($systemName." downloaded latest package ".$packageLatest.". \
         \nPackage ready to deploy.");
 
@@ -34,11 +34,15 @@
     }\
     else={
 
-        :log info ("...:::No updates found. ".$packageCurrent." is the latest version...:::");
+        :log info ("...:::No cAP updates found. ".$packageCurrent." is the latest version...:::");
+
+        /tool e-mail send server=$smtpServer port=$smtpPort from=($systemName.$domain) \ 
+        to=$recipient subject=("No cAP update available on ".$systemName) \ 
+        body=($systemName." cAPs have installed the latest package ".$packageLatest);
 
     }
 }
 
 $PackageAutoDownload userName=userName password=password packagePath=path \
 smtpServer=ipAddress smtpPort=poty domain=@example.com \
-recipient=recipient@example.com;
+recipient=recipient@example.com capsmanIP=capsmanIP;
