@@ -9,6 +9,10 @@
 
 ## Change log
     
+   - 10/17/2019 update code fixes
+    - CAPsMAN_Auto_SSID_Pass_Change.rsc
+    - CAPsMAN_Package_Auto_Download.rsc
+
    - 8/4/2019 first release
     -   CAPsMAN General Automation 
         -   CAPsMAN_CAP_Package_Auto_Download.rsc
@@ -25,6 +29,12 @@
 -  :white_check_mark: RouterOS v6.40 or higher
 
 ## Usage
+
+### CAPsMAN General Automation 
+
+### CAPsMAN Automated Sync (pseudo HA)
+
+### CAPsMAN Reporting 
 
 ## Authors
 
