@@ -8,6 +8,8 @@
     :local scriptSource;
     :local newSSIDPass;
 
+    :local systemName [system identity get value name];
+
     /tool fetch mode=https http-method=get url=$url dst-path=($destinationPath."/".$destinationFileName);
     
     :log info "...:::Script String Generator fetched:::...";
@@ -25,3 +27,7 @@
     body=("New ."$securityProfile." generated password is: ".$newSSIDPass);
 
 }
+
+$AutoPassChange url="https://raw.githubusercontent.com/gbudny93/RouterOS_Useful_Scripts/master/RouterOS_String_Generator.rsc" \ 
+destinationPath="scripts" destinationFileName="RouterOS_String_Generator.rsc" scriptName=scriptName securityProfile=securityProfileName \
+smtpServer=smtpServer smtpPort=smtpPort domain=example.com recipient=recipient@example.com; 
