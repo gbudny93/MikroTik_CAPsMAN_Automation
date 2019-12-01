@@ -1,11 +1,10 @@
-# RouterOS_Useful_Scripts
-> MikroTik CAPsMAN Automation contains RouterOS scripts and function that all together gives you a complex CAPsMAN Automation: simple sync mechanism, reporting, moniroring as well automation of administrative tasks 
+# MikroTik_CAPsMAN_Automation
+> MikroTik CAPsMAN Automation contains RouterOS scripts and function that all together gives you a complex CAPsMAN Automation: simple sync mechanism, reporting, moniroring as well automation of administrative tasks. This repository may use some scripts from :link: [RouterOS_Useful_Scripts](https://github.com/gbudny93/RouterOS_Useful_Scripts).
 
 ![](https://img.shields.io/badge/scripting-routeros-important.svg)
 ![](https://img.shields.io/badge/mikrotik-routerBOARD-yellow)
 ![](https://img.shields.io/badge/network-automation-informational)
 ![](https://img.shields.io/badge/mikrotik-capsman-yellow)
-
 
 ## Change log
     
@@ -28,7 +27,7 @@
 
 -  :white_check_mark: RouterOS v6.40 or higher
 
-## Usage
+## How to use
 
 ### 1. CAPsMAN General Automation 
 
@@ -64,6 +63,7 @@ Supported features:
 - [ ] Sync ACL 
 - [ ] Sync configurations 
 - [ ] Sync custom parameters of RouterOS 
+- [ ] Functions based 
 
 Example: 
 RouterOS_Interfaces_Count.rsc must be run on primary CAPsMAN
