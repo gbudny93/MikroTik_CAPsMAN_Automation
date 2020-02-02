@@ -1,5 +1,7 @@
 # MikroTik_CAPsMAN_Automation
-> MikroTik CAPsMAN Automation contains RouterOS scripts and function that all together gives you a complex CAPsMAN Automation: simple sync mechanism, reporting, moniroring as well automation of administrative tasks. This repository may use some scripts from :link: [RouterOS_Useful_Scripts](https://github.com/gbudny93/RouterOS_Useful_Scripts).
+> MikroTik CAPsMAN Automation contains RouterOS scripts and function that all together gives you a complex CAPsMAN Automation: simple sync mechanism, reporting, moniroring as well automation of administrative tasks. 
+**This repository may use some scripts from :link: [RouterOS_Useful_Scripts](https://github.com/gbudny93/RouterOS_Useful_Scripts).**
+**Here you can find script template that I use :link: [RouterOS_Script_Template](https://gist.github.com/gbudny93/8ad0899576407e5efe9323febb368796).**
 
 ![](https://img.shields.io/badge/scripting-routeros-important.svg)
 ![](https://img.shields.io/badge/mikrotik-routerBOARD-yellow)
@@ -8,6 +10,9 @@
 
 ## Change log
     
+   - 10/17/2019 update code fixes
+        - CAPsMAN_Status.rsc
+        
    - 10/17/2019 update code fixes
         - CAPsMAN_Auto_SSID_Pass_Change.rsc
         - CAPsMAN_Package_Auto_Download.rsc
@@ -73,8 +78,13 @@ RouterOS_Interfaces_Import.rsc must be run on backup CAPsMAN
 ### 3. CAPsMAN Reporting 
 > Set of scripts that performs some simple reporting on this what is going on with wireless environment from controller perspective. 
 
+#### CAPSMAN_Status.rsc 
+> Send general RouterOS and CAPsMAN status information via email. 
+
 Example: 
-pending 
+```
+$CAPsMANStatus smtpServer=smtpServer smtpPort=smtpPort domain=domain recipient=recipient@example.com;
+```
 
 ## Authors
 
