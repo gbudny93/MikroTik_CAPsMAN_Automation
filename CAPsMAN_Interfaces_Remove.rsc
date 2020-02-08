@@ -1,5 +1,7 @@
 # RouterOS Script
-# Copyright (c) Grzegorz Budny  
+# Copyright (c) Grzegorz Budny 
+# Version 1.0 
+# Last update: 2/8/2020 
 # Removes all defined CAPsMAN interfaces. Downloads current list from primary CAPsMAN and import it. 
 # Script must be run on any of backup CAPsMANs. 
 

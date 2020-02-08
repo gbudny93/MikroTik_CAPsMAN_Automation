@@ -1,5 +1,7 @@
 # RouterOS Script
 # Copyright (c) Grzegorz Budny 
+# Version 1.0 
+# Last update: 2/8/2020
 # Makes a full copy to file all defined CAPsMAN interfaces.
 # Script must be run on primary CAPsMAN in your environment.
 

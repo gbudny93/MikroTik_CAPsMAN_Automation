@@ -1,5 +1,7 @@
 # RouterOS Fucntion 
 # Copyright (c) Grzegorz Budny 
+# Version 1.0 
+# Last update: 2/8/2020
 # Generates string and updates CAPsMAN profile security config
 
 :global AutoPassChange do={

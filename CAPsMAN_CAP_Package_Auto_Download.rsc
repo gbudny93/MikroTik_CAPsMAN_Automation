@@ -1,5 +1,7 @@
 # RouterOS Fucntion 
 # Copyright (c) Grzegorz Budny 
+# Version 1.0 
+# Last update: 2/8/2020
 # Checks if latest package is available. Downloads it to specified location and send email notification
 
 :global PackageAutoDownload do={

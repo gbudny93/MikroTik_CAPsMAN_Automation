@@ -1,5 +1,7 @@
 # RouterOS Fucntion 
 # Copyright (c) Grzegorz Budny 
+# Version 1.0 
+# Last update: 2/8/2020
 # Upgrades all CAPs attached to CAPsMAN. Log actions in system log and in the file. Sends email notification upon completion 
 
 :global CapAutoUpgrade do={
